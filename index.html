@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Fake Bank</title>
+</head>
+<body>
+    <section class="cajero sec-bienvenido">
+        <div class="bienvenido">
+            <div class="logo">
+                <img src="./img/scotiabank-logo.webp" alt="">
+            </div>
+            <h1>!Hola¡ Te damos la <br> bienvenida a Scotiabank</h1>
+        </div>
+    </section>
+
+
+    <section class="cajero sec-login">
+        <div class="login">
+            <div class="header">
+                <h2>Scotiabank</h2>
+            </div>
+            <div class="contenido-login">
+                <!-- <h1>Cajero totalmente legítimo</h1> -->
+                <h2>Ingresa tu clave de cajero</h2>
+                <form action="">
+                    <!-- <div class="form-segmento">
+                        <label for="usuario">Usuario: </label>
+                        <input type="text" name="usuario" id="usuario" class="usuario">
+                    </div> -->
+                    <div class="form-segmento">
+                        <!-- <label for="contraseña">Contraseña: </label> -->
+                        <input class="contraseña" type="password" name="contraseña" id="contraseña">
+                    </div>
+                    <!-- <input type="button" value="ingresar"> -->
+                </form>
+                <div class="mensaje-seguridad">
+                    <p>Tu clave es secreta. No permitas que otros la vean.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cajero sec-menu">
+        <div class="menu">
+            <div class="header">
+                <h2>Scotiabank</h2>
+                <div class="saludo"><span>bienvenido, </span> <span class="nomUsuario">Usuario</span></div>
+            </div>
+            <div class="usuario-menu">
+                <div class="grid-menu">
+                    <div class="box1"><button class="opcion" type="button">Cuenta en Soles</button></div>
+                    <div class="box2"><button class="opcion" type="button">Cuenta en Dólares</button></div>
+                    <div class="box3"></div>
+                    <div class="box4"><button class="opcion" type="button">Consultar Saldo</button></div>
+                    <div class="box5"><button class="opcion" type="button">Ingresar Monto</button></div>
+                    <div class="box6"><button class="opcion" type="button">Retirar Monto</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cajero sec-consSaldo">
+        <div class="consSaldo">
+            <div class="header">
+                <h2>Scotiabank</h2>
+                <div class="saludo"><span>bienvenido, </span> <span class="nomUsuario">Usuario</span></div>
+            </div>
+            <div class="usuario-menu">
+                <button id="volverMenuSM" type="button">←Volver</button>
+                <div class="usuario-saldo">
+                    <h3>Saldo actual</h3>
+                    <div><span>S/. </span><span id="saldoActual"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cajero sec-ingMonto">
+        <div class="ingMonto">
+            <div class="header">
+                <h2>Scotiabank</h2>
+                <div class="saludo"><span>bienvenido, </span> <span class="nomUsuario">Usuario</span></div>
+            </div>
+            <div class="usuario-menu">
+                <button id="volverMenuIM" type="button">←Volver</button>
+                <div class="usuario-saldo">
+                    <h3>Monto a Ingresar</h3>
+                    <form action="">
+                        <input class="inputMonto" type="text">
+                        <button class="submitMonto" type="submit" id="submitMonto">Ingresar Monto</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="cajero sec-retMonto">
+        <div class="retMonto">
+            <div class="header">
+                <h2>Scotiabank</h2>
+                <div class="saludo"><span>bienvenido, </span> <span class="nomUsuario">Usuario</span></div>
+            </div>
+            <div class="usuario-menu">
+                <button id="volverMenuRM" type="button">←Volver</button>
+                <div class="usuario-retirar">
+                    <div class="grid-menu">
+                        <div><button class="opcion btnRetirar" type="button" value="20">S/ 20</button></div>
+                        <div><button class="opcion btnRetirar" type="button" value="1500">S/ 1500</button></div>
+                        <div><button class="opcion btnRetirar" type="button" value="100">S/ 100</button></div>
+                        <div><button class="opcion btnRetirar" type="button" value="2400">S/ 2400</button></div>
+                        <div><button class="opcion btnRetirar" type="button" value="500">S/ 500</button></div>
+                        <div><button class="opcion btnRetirarEspecifico" type="button">Otro monto en Soles</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cajero sec-error">
+        <div class="errorP">
+            <div class="header">
+                <h2>Scotiabank</h2>
+                <div class="saludo"><span>bienvenido, </span> <span class="nomUsuario">Usuario</span></div>
+            </div>
+            <div class="usuario-menu">
+                <button id="volverMenuEM" type="button">←Volver</button>
+                <div class="usuario-error">
+                    <p><b>Error</b></p><span>Saldo insuficiente, pulse volver para regresar al menú</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cajero sec-monEspecif">
+        <div class="especifMonto">
+            <div class="header">
+                <h2>Scotiabank</h2>
+                <div class="saludo"><span>bienvenido, </span> <span class="nomUsuario">Usuario</span></div>
+            </div>
+            <div class="usuario-menu">
+                <button id="volverMenuEspM" type="button">←Volver</button>
+                <div class="usuario-saldo">
+                    <h3>Monto a Retirar</h3>
+                    <form action="">
+                        <input class="inputRetiro" type="text">
+                        <button class="submitRetiro" type="submit" id="submitRetiro">Retirar Monto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ------------------------ -->
+    <div id="pantallaCarga" class="loader-overlay">
+        <div class="spinner"></div>
+        <p class="loader-texto">Estamos procesando tu operación</p>
+    </div>
+    <!-- ------------------------ -->
+
+<script src="main.js"></script>
+</body>
+</html>
